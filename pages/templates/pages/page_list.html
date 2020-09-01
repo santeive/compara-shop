@@ -1,0 +1,33 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block title %}Páginas{% endblock %}
+{% block content %}
+
+{% include 'pages/includes/pages_menu.html' %}
+
+<main role="main">
+  <div class="container mb-4">
+    <!-- El nombre generico que le da es: object_list ó el nombre del modelo page_list -->
+    {% for page in page_list|dictsort:"id" reversed %}
+      <div class="row mt-3">
+        <div class="col-md-9 mx-auto">
+          <!-- Para el titulo -->
+          <h2 class="mb-4">{{page.title}}</h2>
+          <div>
+            <!-- Para la descripción -->
+            <p>{{page.content|striptags|safe|truncatechars:"200"}}</p>
+            <!-- Para el link -->
+            <p><a href="{% url 'pages:page' page.id page.title|slugify %}">Leer más</a>      
+              <!-- Para los editables -->
+              {% if request.user.is_staff %}
+                | <a href="{% url 'pages:update' page.id %}">Editar</a>
+                | <a href="{% url 'pages:delete' page.id %}">Borrar</a>
+              {% endif %}
+            </p>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</main>
+{% endblock %}
