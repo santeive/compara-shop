@@ -10,44 +10,61 @@
   </div>
   {% else %}
 
-  <div class="larva-logo">
-    <img src="{% static 'core/img/Larva.jpg'%}" class="img-fluid float-left" alt="Responsive image">
-  </div>
+  <div class="container">
+    <div class="row">
 
-  <div class="updated">
-    <p>Última Actualización: 23 de Enero de 2020</p>
-  </div>
+      <!-- Side bar menu -->
+      <div class="col-12 col-md-3">
+        <h5 class="my-3"><strong>Stores</strong></h5>
+        <div class="list-group">
+          <a href="#" class="list-group-item">Claroshop</a>
+          <a href="#" class="list-group-item">Linio</a>
+          <a href="#" class="list-group-item">Walmart</a>
+        </div>
+      </div>
 
-  <table class="table table-striped">
-    <thead>
-      <tr>
-        <th scope="col">#</th>
-        <th scope="col">First</th>
-        <th scope="col">Last</th>
-        <th scope="col">Handle</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th scope="row">1</th>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>@mdo</td>
-      </tr>
-      <tr>
-        <th scope="row">2</th>
-        <td>Jacob</td>
-        <td>Thornton</td>
-        <td>@fat</td>
-      </tr>
-      <tr>
-        <th scope="row">3</th>
-        <td>Larry</td>
-        <td>the Bird</td>
-        <td>@twitter</td>
-      </tr>
-    </tbody>
-  </table>
+      <div class="col-12 col-md-9">
+        <div class="larva-logo">
+          <img src="{% static 'core/img/Larva.jpg'%}" class="img-fluid float-left" alt="Responsive image">
+        </div>
+      
+        <div class="updated">
+          <p>Última Actualización: 23 de Enero de 2020</p>
+        </div>
+      
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">First</th>
+              <th scope="col">Last</th>
+              <th scope="col">Handle</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Larry</td>
+              <td>the Bird</td>
+              <td>@twitter</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
   
   {% endif %}
 </div>

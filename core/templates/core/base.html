@@ -49,27 +49,10 @@
         </div>
       </nav>
       
-      <div class="container">
-        <div class="row">
-
-          <!-- Side bar menu -->
-          <div class="col-12 col-md-3">
-            <h5 class="my-3"><strong>Stores</strong></h5>
-            <div class="list-group">
-              <a href="#" class="list-group-item">Claroshop</a>
-              <a href="#" class="list-group-item">Linio</a>
-              <a href="#" class="list-group-item">Walmart</a>
-            </div>
-          </div>
-
-          <div class="col-12 col-md-9">
-              <!-- Contenido -->
-              {% block content %}
-                
-              {% endblock %}
-          </div>
-        </div>
-    </div>
+      <!-- Contenido -->
+      {% block content %}
+        
+      {% endblock %}
 
       <!-- Javascript -->
       <script src="{% static 'core/vendor/jquery/jquery.min.js' %}"></script>
