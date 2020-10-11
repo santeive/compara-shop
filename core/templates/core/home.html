@@ -6,7 +6,7 @@
   {% if not request.user.is_authenticated %}
   <div style="padding-top:50px; text-align:center;">
     <h1>{{title}}</h1>
-    <p class="lead">CBV, autenticación, registros, perfiles y más</p>
+    <p class="lead">CBV, compara precios, perfiles y más</p>
   </div>
   {% else %}
 
@@ -24,10 +24,7 @@
       </div>
 
       <div class="col-12 col-md-9">
-        <div class="larva-logo">
-          <img src="{% static 'core/img/Larva.jpg'%}" class="img-fluid float-left" alt="Responsive image">
-        </div>
-      
+        
         <div class="updated">
           <p>Última Actualización: 23 de Enero de 2020</p>
         </div>
@@ -62,6 +59,14 @@
             </tr>
           </tbody>
         </table>
+
+        <div class="compara">
+          <div class="active-pink-3 active-pink-4 mb-4">
+            <h5 class="encuentra">Encuentra tus productos favoritos</h5>
+            <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+          </div>
+        </div>
+        
       </div>
     </div>
   </div>
