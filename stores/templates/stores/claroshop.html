@@ -1,0 +1,33 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block title %}Inicio{% endblock %}
+{% block content %}
+<div class="container">
+
+  <div class="container">
+    <div class="row">
+
+      <!-- Side bar menu -->
+      <div class="col-12 col-md-3">
+        <h5 class="my-3"><strong>Stores</strong></h5>
+        <div class="list-group">
+          <a href="{% url 'stores:claroshop' %}" class="list-group-item">Claroshop</a>
+          <a href="{% url 'stores:linio' %}" class="list-group-item">Linio</a>
+          <a href="{% url 'stores:walmart' %}" class="list-group-item">Walmart</a>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-9">
+        
+        <div class="updated">
+          <strong>Welcome to Claroshop</strong>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+{% endblock %}

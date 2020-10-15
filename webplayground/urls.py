@@ -20,12 +20,14 @@ from django.conf import settings
 
 urlpatterns = [
     path('', include('core.urls')),
-    #Aqui se incluye la tupla
+    #Admin and pages
     path('pages/', include(pages_patterns)),
     path('admin/', admin.site.urls),
     #Paths de Auth
     path('accounts/', include('django.contrib.auth.urls')),
     path('accounts/', include('registration.urls')),
+    #Stores
+    path('stores/', include('stores.urls')),
 ]
 
 if settings.DEBUG:
