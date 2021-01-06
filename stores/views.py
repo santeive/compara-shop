@@ -3,9 +3,9 @@ from django.contrib.auth.decorators import login_required
 
 # Create your views here.
 def claroshop(request):
-    titulo = 'Pagina base'
+    records = 24334
     context = {
-        'titulo': titulo
+        'records': records
     }
     return render(request, 'stores/claroshop.html', context)
 
