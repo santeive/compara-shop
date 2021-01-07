@@ -64,4 +64,8 @@ h5.encuentra {
 .active-pink-4 input[type=text]:focus:not([readonly]) {
     border: 1px solid #8fbbf4;
     box-shadow: 0 0 0 1px #8fbbf4;
-  }
+}
+
+.info-store {
+    margin-top: 10%;
+}
